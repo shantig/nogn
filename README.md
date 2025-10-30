@@ -54,9 +54,9 @@ Core loop: **see → understand → project → react** within a tight latency b
 - Spatial projection error: **≤ 1.5 cm** at center, **≤ 3 cm** at edges after correction.
 
 **Deliverables**
-- **`/notebooks/04_demo.ipynb`** — inference + visualization walkthrough.
-- **`/src/nogn/runtime.py`** — real‑time loop (capture → detect/track → project).
-- **`/calibration/`** — printable ArUco board and calibration scripts.
+- `notebooks/04_demo.ipynb` — inference + visualization walkthrough
+- `src/nogn/runtime.py` — real‑time loop (capture → detect/track → project)
+- `calibration/` — printable ArUco board + scripts
 
 | Component | Choice |
 | --- | --- |
@@ -64,7 +64,7 @@ Core loop: **see → understand → project → react** within a tight latency b
 | Tracker | ByteTrack |
 | Markers | ArUco (OpenCV) |
 | Framework | PyTorch, OpenCV |
-| Accelerator | Raspberry Pi **AI HAT+** (Hailo-8, 26 TOPS) |
+| Accelerator | Raspberry Pi **AI HAT+** (Hailo, 26 TOPS) |
 | Output | Real‑time projection + notebook demo |
 
 ---
@@ -108,17 +108,19 @@ Pass/fail for playability: children can complete a 60‑second mini‑game witho
 
 ## 💸 Resources Needed
 
-**Compute:** Raspberry Pi 5 + Raspberry Pi **AI HAT+** accelerator (26 TOPS).
+**Compute:** Raspberry Pi 5 + Raspberry Pi **AI HAT+** accelerator (Hailo).
 
-**Optics:** **TI DLPDLCR230NPEVM** pico projector (~100 lm typical), Raspberry Pi Camera Module 3 (12MP).
+**Optics:** **TI DLPDLCR230NPEVM** pico projector (~100 lm), **Raspberry Pi Camera Module 3**.
 
-**Power (projector):** 5 VDC, ≥4 A, barrel plug **5.5×2.5 mm** (PD-trigger cable in Inventory works).
+**Power (projector):** 5 VDC ≥ 4 A via 5.5×2.5 mm barrel (separate PSU).
 
-**Mounting:** Rig/tripod + printable ArUco board.
+**Mounting:** Simple ceiling/boom mount + printable ArUco board.
+
+**APIs/Libraries:** Ultralytics, OpenCV, HailoRT, NumPy, PyTorch.
 
 **Budget:** $$–$$$ (projector already purchased).
 
-**APIs/Libraries:** Ultralytics, OpenCV, HailoRT, NumPy, PyTorch.
+**Hardware Source of Truth:** Notion → *Nogn Midterm Project → Inventory/Hardware*.
 
 ---
 
