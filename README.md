@@ -6,6 +6,8 @@
 
 **Due Dates:** Midterm – Oct 30 | Final – Dec 4
 
+**Presentation** https://www.canva.com/design/DAG3Si4e66g/jzNNgnWLc9SqqNnHYzdqrA/edit?utm_content=DAG3Si4e66g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ---
 
 ## 💎 Project Tier
